@@ -7,6 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     const storedNotes = JSON.parse(localStorage.getItem("notes")) || [];
+    console.log("Fetched notes:", storedNotes); // Debugging line
     setNotes(storedNotes);
   }, []);
 
